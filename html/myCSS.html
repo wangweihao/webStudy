@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my first css</title>
+
+    <style>
+        p{
+            color: bisque;
+        }
+    </style>
+    <style>
+        .hello{
+            color: darkorange;
+        }
+        #world{
+            color: #660000;
+        }
+        .foo>li{
+            border: 1px solid red;
+        }
+        .foo>p{
+            border: 1px solid orange;
+        }
+        a:hover{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        .hello, #world{
+            font-size: large;
+            font-family: "Microsoft Yai ";
+            font-weight: bold;
+            font-style: italic;
+            /*text-decoration: underline;*/
+            text-decoration: line-through;
+        }
+        .mydiv{
+            border-bottom:1px dotted;
+            border-bottom-color: #660000;;
+        }
+        div{
+            border: 1px solid red;
+            padding: 20px 10px 15px 100px;
+        }
+        #box1{
+            margin-bottom: 30px;
+        }
+        #div1{
+            width:200px;
+            height:200px;
+            border: 2px red solid;
+            float: left;
+        }
+        #div2{
+            width:200px;
+            height:200px;
+            border: 2px red solid;
+            float: right;
+        }
+        #div3{
+            border: solid red 2px;
+            height:200px;
+            width: 200px;
+            position: relative;
+        }
+        #div4{
+            border: solid red 2px;
+            height:200px;
+            width: 200px;
+            position: absolute;
+        }
+        #div5{
+            border: solid 2px red;
+            margin: 20px auto;
+        }
+    </style>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <p style="color: blueviolet;font-size: large">有一种落差是，你配不上<span>自己的野心</span>，也辜负了<span>所受的苦难</span>。</p>
+    <p>有一种落差是，你配不上<span>自己的野心</span>，也辜负了<span>所受的苦难</span>。</p>
+    <p class="hello">人就不要瞻前顾后，考虑来考虑去，觉得有意义就去做吧。人生就是在不断地作出选择，要有勇气和决心去做决定。</p>
+    <p id="world">人就不要<a href="www.baidu.com">瞻前顾后</a>，考虑来考虑去，觉得有意义就去做吧。人生就是在不断地作出选择，要有勇气和决心去做决定。</p>
+
+    <ol class="foo">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <p>hello world</p>
+    </ol>
+
+    <div class="mydiv">
+        <p>你总是以为某个地方就是终点，会决定你的一切。什么时候才会发现，除了死亡这个终点，没有什么能决定你的一切。</p>
+    </div>
+
+    <div id="box1">
+        盒子
+    </div>
+    <div>
+        盒子2
+    </div>
+
+    <div id="div1">栏目1</div>
+    <div id="div2">栏目2</div>
+
+    <div id="div3">
+        <div id="div4">
+            相对定位
+        </div>
+    </div>
+
+    <div id="div5">
+        我是定宽块状元素
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+    <h1 id="h1">操作成功</h1>
+    <p><span id="s">5</span> 秒后返回</p>
+    <a href="javascript:back()">返回</a>
+
+    <script type="text/javascript">
+        var s = document.getElementById("s").innerHTML;
+
+        document.write("one:" + document.getElementById("h1").value + "<br>");
+        document.write("one:" + document.getElementById("h1").innerHTML + "<br>");
+        function count() {
+            s--;
+            if (s == "0") {
+                window.location.assign("www.4399.com");
+            }else {
+                document.getElementById("s").innerHTML = s;
+            }
+        }
+        function back() {
+            window.history.back();
+        }
+        window.setInterval("count()", 1000);
+    </script>
+
+</body>
+</html>

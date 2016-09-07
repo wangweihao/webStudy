@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json function</title>
+</head>
+<body>
+    <script>
+        function hello() {
+            var i = {
+                "say":function () {
+                    document.write("say hello" + "<br/>");
+                }
+            }
+            i.say();
+        }
+        function getTime() {
+            var time = new Date();
+            document.getElementById("clock").value = time.toLocaleTimeString();
+        }
+//        window.setTimeout("hello();", 1000);
+        var timeId;
+        function restoreTime() {
+            timeId = window.setInterval("getTime()", 1000);
+        }
+        restoreTime();
+//        window.clearInterval(timeId);
+//        window.setInterval("hello()", 1000);
+
+    </script>
+
+
+    <input type="text" id="clock" size="50"><br>
+    <input type="button" size="10px" id="stop" name="stop" value="stop" onclick="window.clearInterval(timeId)"><br>
+    <input type="button" size="10px" id="restore" name="restore" value="restore" onclick="restoreTime()">
+</body>
+</html>

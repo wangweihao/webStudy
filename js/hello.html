@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+    <script src="helloJS.js"></script>
+    
+    
+    <style>
+        #hiden{
+            font-size:20px;
+            color: blueviolet;;
+        }
+        .one{
+            background-color: aqua;
+            border: 1px solid #eee;
+            width: 230px;
+            height: 50px;
+            color: red;
+        }
+        .two{
+            background-color: orange;
+            border: 1px solid #660000;
+            width: 230px;
+            height:50px;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">从你的全世界路过</p>
+
+    <!--<script type="text/javascript">-->
+        <!--document.write("hello world");-->
+        <!--document.getElementById("p1").style.color = "blue";-->
+    <!--</script>-->
+
+    <script>
+        function hi() {
+            alert("hello world");
+            var h = "say good bye";
+            alert(h);
+        }
+    </script>
+
+    <script type="text/javascript">
+        function rec() {
+            var str = "你的性别";
+            var message = confirm(str);
+            if (message == true) {
+                document.write("妹子");
+            }else {
+                document.write("男生");
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        function grand() {
+            var str = "请输入你的成绩";
+            var ret = prompt(str, "希望是100分");
+            if (ret > 100) {
+                document.write("同学你昏了吧");
+            }else{
+                document.write("请继续努力");
+            }
+        }
+    </script>
+    
+    <script type="text/javascript" >
+        function MyOpen() {
+            window.open("http://www.baidu.com", "_blank", "width=30");
+        }
+    </script>
+
+    <script type="text/javascript">
+        function MyClose() {
+            var win = window.open("http://www.baidu.com", "_blank", "width = 30");
+            win.close();
+        }
+    </script>
+
+    <script type="text/javascript">
+        function openNewWindow() {
+            var ret = prompt("是否打开新窗口");
+            if (ret == "yes") {
+                window.open("http://www.baidu.com", "_blank", "width=400px, height=500px, toolbar=yes, status=no, scrollbar=yes");
+            }else {
+                document.write("not found");
+            }
+        }
+    </script>
+
+
+    <h5>hello</h5><br/>
+    <p id="hi">hello world</p>
+
+    <script type="text/javascript">
+            var p = document.getElementById("hi");
+            p.style.color = "blue";
+            document.write("result:" + p.innerHTML + "<br/>");
+            p.innerHTML = "say GoodBye";
+            document.write("result" + p.innerHTML);
+    </script>
+
+    <script type="text/javascript">
+        function hidenText() {
+            var v = document.getElementById("hiden");
+            v.display = "none";
+        }
+        function showText() {
+            var v = document.getElementById("hiden");
+            v.display = "block";
+
+        }
+        function changeBackOne() {
+            var v = document.getElementById("p2");
+            v.className = "one"
+        }
+        function changeBackTwo() {
+            var v = document.getElementById("p3");
+            v.className = "two";
+
+        }
+    </script>
+
+    <br/>
+    <input name="button" type="button" onclick="hi()" value="点击我">
+    <br/>
+    <input name="button2" type="button" onclick="rec()" value="快点击我">
+    <br/>
+    <input name="button3" type="button" onclick="grand()" value="点击我吧">
+    <br/>
+    <input name="button4" type="button" onclick="MyOpen()" value="点击我打开百度">
+    <br/>
+    <input name="button5" type="button" onclick="MyClose()" value="点击我打开百度,自动关闭">
+    <br/>
+    <input name="button6" type="button" onclick="openNewWindow()" value="快快快点击我">
+    <br/>
+    <p id="hiden">say hello</p>
+    <input name="button7" type="button" onclick="hidenText()" value="hiden">
+    <input name="button8" type="button" onclick="showText()" value="show">
+
+    <br/>
+
+    <p id="p2">从你的全世界路过</p>
+    <br/>
+    <input name="button9" type="button" onclick="changeBackOne()" value="改变one">
+    <p id="p3" class="one">从你的全世界路过</p>
+    <input name="button10" type="button" onclick="changeBackTwo()" value="改变two">
+</body>
+</html>

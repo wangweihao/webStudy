@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="application/javascript" language="JavaScript">
+        document.write("<font color='#8a2be2'>紫色的字体有 javascript 产生<font/>")
+    </script>
+
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+    <p>hello world</p>
+    <script src="myFirstJS.js"></script>
+    <font color="aqua">蓝色的文字</font>
+    <br/>
+    <input type="button" value="show" onclick="hello()">
+    <input type="text" id="hi"/>
+
+    <script>
+        window.onload = function(){
+
+            var images = document.getElementsByTagName('img');
+            var pos = 0;
+            var len = images.length;
+
+            setInterval(function(){
+
+                images[pos].style.display = 'none';
+                pos = ++pos == len ? 0 : pos;
+                images[pos].style.display = 'inline';
+
+            },1000);
+
+        };
+    </script>
+
+    <div id="tab">
+        <img src="/Users/wwh/Documents/1.jpg" width="400" height="250"/>
+        <img src="/Users/wwh/Documents/2.jpg" width="400" height="250"/>
+        <img src="/Users/wwh/Documents/3.jpg" width="400" height="250"/>
+    </div>
+</body>
+</html>

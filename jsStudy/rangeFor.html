@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+    <script>
+        function hello() {
+            var arr = [8,7,6,5,4,3,2,1];
+            for (var i in arr) {
+                document.write(arr[i]);
+            }
+            document.write(typeof(arr));
+        }
+        var man = {
+            name:"wangweihao",
+            sex:1,
+            get age() {
+                return new Date().getYear()-1995;
+            },
+            set age(v) {
+                console.log("hi");
+            }
+        };
+        var h = new hello();
+        //h();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

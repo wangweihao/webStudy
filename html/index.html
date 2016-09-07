@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>say hello</title>
+    <style>
+        h5{
+            font-size: 20px;
+            color: #600;;
+            text-align: left;
+        }
+        span{
+            color: aqua;
+        }
+    </style>
+    <style type="text/css">
+        table tr td, th{border: 1px solid #000;}
+    </style>
+    <style>
+        p{
+            color: blueviolet;
+            font-size: xx-large;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <h2>hello world</h2>
+    <!--<script>-->
+        <!--function hello() {-->
+            <!--console.log("hello world");-->
+        <!--}-->
+    <!--</script>-->
+    <p>你好,我是<span>大名鼎鼎</span>的王伟豪</p>
+    <p>这是&nbsp马总 <q>说的话</q> </p>
+
+    <hr/>
+    <div id="one">
+        <h5>第一</h5>
+        <p>第一句</p>
+    </div>
+    <div id="two">
+        <h5>第二</h5>
+        <p>第二句</p>
+    </div>
+    <hr/>
+
+    <div id="table">
+        <h5>table</h5>
+        <table summary="描述商品">
+            <caption>商品单价表</caption>
+            <tr>
+                <th>商品名称</th>
+                <th>单价</th>
+            </tr>
+            <tr>
+                <td>优酸乳</td>
+                <td>200</td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+
+    <div>
+        <ol>
+            <li><a href="blog.csdn.net/wwh578867817" title="前端面试心得">前端</a></li>
+            <li><a href="blog.csdn.net/wwh578867817" title="后端面试心得" target="_blank">后端</a></li>
+            <li><a href="mailto:578867817@qq.com" >发送</a> </li>
+        </ol>
+    </div>
+
+    <div id="img">
+        <h5>看我帅不帅</h5>
+        <img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" title="电影介绍" alt="太帅了,无法显示">
+        <hr/>
+        <br/>
+        <img src="#" title="电影介绍" alt="太帅了,无法显示">
+    </div>
+
+    <hr/>
+
+    <form method="post" action="save.php">
+        <label for="username">用户名:</label>
+        <input type="text" name="username" id="username" value=""/>
+        <label for="pass">密码:</label>
+        <input type="password" name="pass" id="pass" value="" />
+        <input type="submit" value="确定" name="submit" />
+        <input type="reset" value="重置" name="reset"/>
+    </form>
+
+    <hr/>
+
+    <form method="post" action="save.php">
+        <label for="un">姓名:</label>
+        <input type="text" name="username" id="un" value="" />
+        <label for="pw">身高:</label>
+        <input type="text" name="password" id="pw" value="" />
+        <input type="submit" value="确定" name="submit">
+        <input type="reset" value="重置" name="reset">
+    </form>
+    <hr/>
+
+    <form method="post" action="save.php">
+        <label>性别:</label>
+        <label>男</label>
+        <input type="radio" name="gender-man" value="1">
+        <label>女:</label>
+        <input type="radio" name="gender-woman" value="2">
+    </form>
+    <hr/>
+
+    <form method="post" action="save.php">
+        <label>实习经历</label>
+        <input type="text" value="" name="实习">
+        <label>提交</label>
+        <input type="submit" value="提交">
+        <input type="reset"  value="重置">
+    </form>
+    <hr/>
+
+    <form name="education" method="post" action="save.php">
+        <label>学历:</label>
+        <select multiple="multiple">
+            <option value="博士">博士</option>
+            <option value="本科" selected="selected">本科</option>
+            <option value="研究生">研究生</option>
+            <option value="大专">大专</option>
+            <option value="初高中">初高中</option>
+        </select>
+    </form>
+    <hr/>
+
+    <form name="travel" method="post" action="save.php">
+        <label>你是否喜欢旅游</label><br/>
+        <label for="1">喜欢</label>
+        <input type="radio" id="1" name="radioLove" value="喜欢" checked="checked">
+        <label for="2">不喜欢</label>
+        <input type="radio" id="2" name="radioLove" value="不喜欢" checked="checked">
+        <label for="3">无所谓</label>
+        <input type="radio" id="3" name="radioLove" value="无所谓">
+        <br/>
+        <br/>
+        你对那些运动感兴趣<br/>
+        <input type="checkbox" name="checkbox1" value="跑步">跑步
+        <input type="checkbox" name="checkbox2" value="打球" checked="checked">打球
+        <input type="checkbox" name="checkbox3" value="登山" checked="checked">登山
+        <input type="checkbox" name="checkbox4" value="健身">健身
+    </form>
+    <hr/>
+
+    <form method="post" action="save.php">
+        <label>个人简介</label><br/>
+        <textarea cols="50" rows="10">请输入...</textarea>
+    </form>
+
+
+    <p>使用CSS样式的一个好处是通过定义某个样式，可以让不同网页位置的文字有着统一的字体、字号或者颜色等。</p>
+</body>
+</html>
